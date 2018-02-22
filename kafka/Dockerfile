@@ -10,10 +10,10 @@ ENV ADVERTISED_PORT 9092
 RUN apt-get update
 RUN apt-get install tar
 RUN wget -q http://www-eu.apache.org/dist/kafka/0.11.0.2/kafka_2.12-0.11.0.2.tgz -P / 
-RUN tar xfz kafka_2.11-0.10.2.1.tgz
-RUN rm kafka_2.11-0.10.2.1.tgz
+RUN tar xfz kafka_2.12-0.11.0.2.tgz
+RUN rm kafka_2.12-0.11.0.2.tgz
 
-WORKDIR kafka_2.11-0.10.2.1/
+WORKDIR kafka_2.12-0.11.0.2/
 
 COPY start1.sh /home/
 
